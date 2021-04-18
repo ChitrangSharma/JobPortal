@@ -15,6 +15,7 @@
           <ul id="nav-mobile" class="right ">
             <li><a  class="modal-trigger" href="#modal2">Login</a></li>
             <li><a class="modal-trigger" href="#modal1">Signup</a></li>
+            <button class="waves-effect waves-light btn" onclick="logout()">Logout</button>
             <!-- <li><a href="collapsible.html">JavaScript</a></li> -->
           </ul>
         </div>
@@ -29,6 +30,7 @@
         <input type="password" id="signuppassword" placeholder="password" />
         <button class="btn waves-effect  #fdd835 yellow darken-1" type="submit">submit</button>
      </form>
+     <button  class="btn waves-effect  #fdd835 yellow darken-1" onclick="loginWithGoogle()">With Google</button>
       
 
     </div>
@@ -37,12 +39,12 @@
   <div id="modal2" class="modal">
     <div class="modal-content">
       <h4>Login</h4>
-     <form autocomplete="off">
+     <form autocomplete="off" onsubmit="login(event)">
         <input type="email" id="loginemail" placeholder="email" />
         <input type="password" id="loginpassword" placeholder="password" />
         <button class="btn waves-effect  #fdd835 yellow darken-1" type="submit">submit</button>
      </form>
-      
+     <button  class="btn waves-effect  #fdd835 yellow darken-1" onclick="loginWithGoogle()">With Google</button>
 
     </div>
   </div>
