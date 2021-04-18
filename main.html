@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Document</title>
+</head>
+<body>
+  
+    <nav>
+        <div class="nav-wrapper #fdd835 yellow darken-1">
+          <a href="#" class="brand-logo left ">Job Portal  </a>
+          <ul id="nav-mobile" class="right ">
+            <li><a  class="modal-trigger" href="#modal2">Login</a></li>
+            <li><a class="modal-trigger" href="#modal1">Signup</a></li>
+            <!-- <li><a href="collapsible.html">JavaScript</a></li> -->
+          </ul>
+        </div>
+      </nav>
+
+       <!-- Signup Modal -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Signup</h4>
+     <form autocomplete="off">
+        <input type="email" id="signupemail" placeholder="email" />
+        <input type="password" id="signuppassword" placeholder="password" />
+        <button class="btn waves-effect  #fdd835 yellow darken-1" type="submit">submit</button>
+     </form>
+      
+
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h4>Login</h4>
+     <form autocomplete="off">
+        <input type="email" id="loginemail" placeholder="email" />
+        <input type="password" id="loginpassword" placeholder="password" />
+        <button class="btn waves-effect  #fdd835 yellow darken-1" type="submit">submit</button>
+     </form>
+      
+
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems);
+  });
+
+      </script>
+</body>
+</html>
