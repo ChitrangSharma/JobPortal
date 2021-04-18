@@ -24,7 +24,7 @@
   <div id="modal1" class="modal">
     <div class="modal-content">
       <h4>Signup</h4>
-     <form autocomplete="off">
+     <form autocomplete="off" onsubmit="signup(event)">
         <input type="email" id="signupemail" placeholder="email" />
         <input type="password" id="signuppassword" placeholder="password" />
         <button class="btn waves-effect  #fdd835 yellow darken-1" type="submit">submit</button>
@@ -54,5 +54,24 @@
   });
 
       </script>
-</body>
+      <!-- firebase adding -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBQuGU5NpKs6URjsKJE-AyK_ORahxjWUxA",
+    authDomain: "job-portal-89f92.firebaseapp.com",
+    projectId: "job-portal-89f92",
+    storageBucket: "job-portal-89f92.appspot.com",
+    messagingSenderId: "204674596957",
+    appId: "1:204674596957:web:e85185db3e31c74e538db4"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="scripts/auth.js"></script>
+    </body>
 </html>
